@@ -27,10 +27,16 @@ class EEGViewController: UIViewController {
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "采集", style: .plain, target: self, action: #selector(sampleButtonTouched))
 
-        service.discoverCharacteristics(nil).flatMap { Observable.from($0) }.filter { $0.uuid.whichCharacteristic == .eeg_data }.take(1).subscribe(onNext: { [weak self] in
-            guard let `self` = self else { return }
-            self.characteristic = $0
-        }).disposed(by: disposeBag)
+        service.discoverCharacteristics(nil)
+            .flatMap { Observable.from($0) }
+            .filter {
+                ($0.uuid.whichCharacteristic == .eeg_data) || ($0.uuid.whichCharacteristic == .eeg_data_1)
+            }
+            .take(1)
+            .subscribe(onNext: { [weak self] in
+                guard let `self` = self else { return }
+                self.characteristic = $0
+            }).disposed(by: disposeBag)
     }
 
     override func viewDidDisappear(_ animated: Bool) {

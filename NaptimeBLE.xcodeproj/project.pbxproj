@@ -20,6 +20,7 @@
 		6C1643061FA03B09002C1438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C1643051FA03B09002C1438 /* Assets.xcassets */; };
 		6C1643091FA03B09002C1438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C1643071FA03B09002C1438 /* LaunchScreen.storyboard */; };
 		6C1643121FA06603002C1438 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1643111FA06603002C1438 /* ScanViewController.swift */; };
+		6C8115CA1FB68F4C00F382D3 /* 1-minute-of-silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C8115C91FB68F4B00F382D3 /* 1-minute-of-silence.mp3 */; };
 		6CA2B1791FA1CCAA00A012BC /* PeripheralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2B1781FA1CCAA00A012BC /* PeripheralViewController.swift */; };
 		6CA2B17B1FA1DCA000A012BC /* ServiceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2B17A1FA1DCA000A012BC /* ServiceHeaderView.swift */; };
 		6CEAC49B1FA1DFE700E04358 /* ServiceHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEAC49A1FA1DFE700E04358 /* ServiceHeaderView.xib */; };
@@ -45,6 +46,7 @@
 		6C1643081FA03B09002C1438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C16430A1FA03B09002C1438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C1643111FA06603002C1438 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		6C8115C91FB68F4B00F382D3 /* 1-minute-of-silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-minute-of-silence.mp3"; sourceTree = "<group>"; };
 		6CA2B1781FA1CCAA00A012BC /* PeripheralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralViewController.swift; sourceTree = "<group>"; };
 		6CA2B17A1FA1DCA000A012BC /* ServiceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHeaderView.swift; sourceTree = "<group>"; };
 		6CEAC49A1FA1DFE700E04358 /* ServiceHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceHeaderView.xib; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		6C1642FD1FA03B09002C1438 /* NaptimeBLE */ = {
 			isa = PBXGroup;
 			children = (
+				6C8115C81FB68F4300F382D3 /* Resources */,
 				6C143B941FA06C51009F866D /* Global */,
 				6C1643101FA06098002C1438 /* UI */,
 				6C1642FE1FA03B09002C1438 /* AppDelegate.swift */,
@@ -127,6 +130,14 @@
 				6C0D22BA1FA46933005EAF33 /* BLENavigationController.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		6C8115C81FB68F4300F382D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C8115C91FB68F4B00F382D3 /* 1-minute-of-silence.mp3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		A9270B81DB032DBDF56008A7 /* Frameworks */ = {
@@ -182,6 +193,11 @@
 					6C1642FA1FA03B09002C1438 = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -210,6 +226,7 @@
 			files = (
 				6C1643091FA03B09002C1438 /* LaunchScreen.storyboard in Resources */,
 				6C1643061FA03B09002C1438 /* Assets.xcassets in Resources */,
+				6C8115CA1FB68F4C00F382D3 /* 1-minute-of-silence.mp3 in Resources */,
 				6C1643041FA03B09002C1438 /* Main.storyboard in Resources */,
 				6CEAC49B1FA1DFE700E04358 /* ServiceHeaderView.xib in Resources */,
 			);
@@ -452,8 +469,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.entertech.NaptimeBLE;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "28849ae4-a32f-479c-8462-f01d8c5faa4d";
-				PROVISIONING_PROFILE_SPECIFIER = "naptime-ble-dev";
+				PROVISIONING_PROFILE = "f0b98f7f-a456-498d-bd32-5f0df3f84289";
+				PROVISIONING_PROFILE_SPECIFIER = "naptime-ble-dev-old";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";

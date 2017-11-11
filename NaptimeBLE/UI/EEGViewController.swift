@@ -12,6 +12,7 @@ import RxBluetoothKit
 import RxSwift
 import SVProgressHUD
 import SwiftyTimer
+import AVFoundation
 
 class EEGViewController: UIViewController {
     var service: Service!
@@ -21,6 +22,13 @@ class EEGViewController: UIViewController {
     private let disposeBag = DisposeBag()
 
     @IBOutlet weak var textView: UITextView!
+
+    private let _player: AVAudioPlayer = {
+        let url = Bundle.main.url(forResource: "1-minute-of-silence", withExtension: "mp3")!
+        let player = try! AVAudioPlayer(contentsOf: url)
+        player.numberOfLoops = 10000
+        return player
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +45,12 @@ class EEGViewController: UIViewController {
                 guard let `self` = self else { return }
                 self.characteristic = $0
             }).disposed(by: disposeBag)
+
+        _player.play()
+    }
+
+    deinit {
+        _player.stop()
     }
 
     override func viewDidDisappear(_ animated: Bool) {

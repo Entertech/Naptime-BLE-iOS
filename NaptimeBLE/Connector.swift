@@ -71,7 +71,7 @@ public final class Connector: DisposeHolder {
                                                     event(.success(allCS))
                                                 }
                                             }, onError: { e in
-                                                event(.error(e))
+                                                event(.failure(e))
                                             })
                                     )
                                 }

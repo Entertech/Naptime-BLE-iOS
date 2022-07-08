@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,7 @@
 		6CFB76111FA30025006C03A5 /* CommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB76101FA30025006C03A5 /* CommandViewController.swift */; };
 		6CFB76131FA323AE006C03A5 /* EEGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB76121FA323AE006C03A5 /* EEGViewController.swift */; };
 		6CFB76151FA32692006C03A5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFB76141FA32692006C03A5 /* Extension.swift */; };
-		7AB57DFAAE31A8CEC7B2E421 /* Pods_BLETool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D2137B8C5F9F5DC91E61D1 /* Pods_BLETool.framework */; };
+		AF0A9C647EEEA0075D61DF70 /* Pods_BLETool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F8B8FB59FC9C475CBB6AA4 /* Pods_BLETool.framework */; };
 		B726F08021F9B672005A4ACF /* NaptimeBLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C71131C1FA9755B0093099D /* NaptimeBLE.framework */; };
 		B726F08121F9B672005A4ACF /* NaptimeBLE.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C71131C1FA9755B0093099D /* NaptimeBLE.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B75785592015E13B0039B2FC /* DFU1.0.0.zip in Resources */ = {isa = PBXBuildFile; fileRef = B75785582015E13B0039B2FC /* DFU1.0.0.zip */; };
@@ -49,7 +49,15 @@
 		B79493E420209D26004166E3 /* DFUPacketFilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79493E320209D26004166E3 /* DFUPacketFilesViewController.swift */; };
 		B79E9BFD215B5C64001465D2 /* BatteryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3FC7881FAABDDB00605D8A /* BatteryService.swift */; };
 		B7BCFBA120186FE800495A52 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BCFBA020186FE800495A52 /* Persistence.swift */; };
-		CEF041FAEAC976A92BF816CD /* Pods_NaptimeBLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8722E8252459251BBDE66464 /* Pods_NaptimeBLE.framework */; };
+		C4B6FF42DC4AE466AE5A9EE2 /* Pods_NaptimeBLE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3193DF69EAAD7B5B644DB0CC /* Pods_NaptimeBLE.framework */; };
+		FA9830792877C26F00F1E6D3 /* RxBluetoothKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA92234C27FE7BC1001D30D3 /* RxBluetoothKit.xcframework */; };
+		FA98307A2877C26F00F1E6D3 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA92235027FE7D1E001D30D3 /* RxSwift.xcframework */; };
+		FA98307C2877C26F00F1E6D3 /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA98307B2877C26F00F1E6D3 /* PromiseKit.xcframework */; };
+		FA98307D2877C2AE00F1E6D3 /* PromiseKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA98307B2877C26F00F1E6D3 /* PromiseKit.xcframework */; };
+		FA98307E2877C2AE00F1E6D3 /* RxBluetoothKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA92234C27FE7BC1001D30D3 /* RxBluetoothKit.xcframework */; };
+		FA98307F2877C2AE00F1E6D3 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA92235A27FE7D99001D30D3 /* RxCocoa.xcframework */; };
+		FA9830802877C2AE00F1E6D3 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA92235027FE7D1E001D30D3 /* RxSwift.xcframework */; };
+		FA9830852877C63C00F1E6D3 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9830842877C63C00F1E6D3 /* Files.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,10 +85,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00D2137B8C5F9F5DC91E61D1 /* Pods_BLETool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLETool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BCED370A1F0DBBF884F4AFC /* Pods-BLETool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLETool.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLETool/Pods-BLETool.release.xcconfig"; sourceTree = "<group>"; };
-		465E8BF9BFF2B656612353A7 /* Pods-BLETool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLETool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLETool/Pods-BLETool.debug.xcconfig"; sourceTree = "<group>"; };
-		69C2959142D9CB6032EA46A2 /* Pods-NaptimeBLE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaptimeBLE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NaptimeBLE/Pods-NaptimeBLE.debug.xcconfig"; sourceTree = "<group>"; };
+		1B1AA7E322DF2FA51D8F9E9C /* Pods-NaptimeBLE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaptimeBLE.release.xcconfig"; path = "Target Support Files/Pods-NaptimeBLE/Pods-NaptimeBLE.release.xcconfig"; sourceTree = "<group>"; };
+		3193DF69EAAD7B5B644DB0CC /* Pods_NaptimeBLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaptimeBLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0D22B01FA41D47005EAF33 /* FileListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListViewController.swift; sourceTree = "<group>"; };
 		6C0D22B21FA41D73005EAF33 /* FileShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileShowViewController.swift; sourceTree = "<group>"; };
 		6C0D22B41FA42352005EAF33 /* DataPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPool.swift; sourceTree = "<group>"; };
@@ -119,17 +125,21 @@
 		6CFB76101FA30025006C03A5 /* CommandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandViewController.swift; sourceTree = "<group>"; };
 		6CFB76121FA323AE006C03A5 /* EEGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EEGViewController.swift; sourceTree = "<group>"; };
 		6CFB76141FA32692006C03A5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		86E96FDF78F918CD5B6AC962 /* Pods-NaptimeBLE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaptimeBLE.release.xcconfig"; path = "Pods/Target Support Files/Pods-NaptimeBLE/Pods-NaptimeBLE.release.xcconfig"; sourceTree = "<group>"; };
-		8722E8252459251BBDE66464 /* Pods_NaptimeBLE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NaptimeBLE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F8B8FB59FC9C475CBB6AA4 /* Pods_BLETool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLETool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		959E9729628D9E43A63EEB63 /* Pods-BLETool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLETool.release.xcconfig"; path = "Target Support Files/Pods-BLETool/Pods-BLETool.release.xcconfig"; sourceTree = "<group>"; };
+		AFE38152A271B435B7B2F13F /* Pods-BLETool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLETool.debug.xcconfig"; path = "Target Support Files/Pods-BLETool/Pods-BLETool.debug.xcconfig"; sourceTree = "<group>"; };
 		B75785582015E13B0039B2FC /* DFU1.0.0.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = DFU1.0.0.zip; sourceTree = "<group>"; };
 		B75901881FE0FF2A00F0890E /* DFUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFUViewController.swift; sourceTree = "<group>"; };
 		B79493E12020702D004166E3 /* V1.0.1-120.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "V1.0.1-120.zip"; sourceTree = "<group>"; };
 		B79493E320209D26004166E3 /* DFUPacketFilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFUPacketFilesViewController.swift; sourceTree = "<group>"; };
 		B7BCFBA020186FE800495A52 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		FA112B762645360D008C39F5 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		BCAFB0D0B75E70AC46F45FA0 /* Pods-NaptimeBLE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NaptimeBLE.debug.xcconfig"; path = "Target Support Files/Pods-NaptimeBLE/Pods-NaptimeBLE.debug.xcconfig"; sourceTree = "<group>"; };
 		FA92234C27FE7BC1001D30D3 /* RxBluetoothKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBluetoothKit.xcframework; path = Carthage/Build/RxBluetoothKit.xcframework; sourceTree = "<group>"; };
 		FA92235027FE7D1E001D30D3 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 		FA92235A27FE7D99001D30D3 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		FA98307B2877C26F00F1E6D3 /* PromiseKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromiseKit.xcframework; path = Carthage/Build/PromiseKit.xcframework; sourceTree = "<group>"; };
+		FA9830812877C59C00F1E6D3 /* Files.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9830842877C63C00F1E6D3 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +147,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB57DFAAE31A8CEC7B2E421 /* Pods_BLETool.framework in Frameworks */,
+				FA98307D2877C2AE00F1E6D3 /* PromiseKit.xcframework in Frameworks */,
+				FA98307E2877C2AE00F1E6D3 /* RxBluetoothKit.xcframework in Frameworks */,
+				FA98307F2877C2AE00F1E6D3 /* RxCocoa.xcframework in Frameworks */,
+				FA9830802877C2AE00F1E6D3 /* RxSwift.xcframework in Frameworks */,
 				B726F08021F9B672005A4ACF /* NaptimeBLE.framework in Frameworks */,
+				AF0A9C647EEEA0075D61DF70 /* Pods_BLETool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +160,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEF041FAEAC976A92BF816CD /* Pods_NaptimeBLE.framework in Frameworks */,
+				FA98307C2877C26F00F1E6D3 /* PromiseKit.xcframework in Frameworks */,
+				FA9830792877C26F00F1E6D3 /* RxBluetoothKit.xcframework in Frameworks */,
+				FA98307A2877C26F00F1E6D3 /* RxSwift.xcframework in Frameworks */,
+				C4B6FF42DC4AE466AE5A9EE2 /* Pods_NaptimeBLE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +176,7 @@
 				6C143B951FA06C68009F866D /* GCD.swift */,
 				6CFB76141FA32692006C03A5 /* Extension.swift */,
 				B7BCFBA020186FE800495A52 /* Persistence.swift */,
+				FA9830842877C63C00F1E6D3 /* Files.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -169,8 +187,8 @@
 				6C1642FD1FA03B09002C1438 /* BLETool */,
 				6C71131D1FA9755B0093099D /* NaptimeBLE */,
 				6C1642FC1FA03B09002C1438 /* Products */,
-				BDF37AF999B672F982338A68 /* Pods */,
 				A9270B81DB032DBDF56008A7 /* Frameworks */,
+				766E4F972381899F0CE10DCC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,28 +286,29 @@
 			path = NaptimeBLE;
 			sourceTree = "<group>";
 		};
+		766E4F972381899F0CE10DCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFE38152A271B435B7B2F13F /* Pods-BLETool.debug.xcconfig */,
+				959E9729628D9E43A63EEB63 /* Pods-BLETool.release.xcconfig */,
+				BCAFB0D0B75E70AC46F45FA0 /* Pods-NaptimeBLE.debug.xcconfig */,
+				1B1AA7E322DF2FA51D8F9E9C /* Pods-NaptimeBLE.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A9270B81DB032DBDF56008A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA9830812877C59C00F1E6D3 /* Files.framework */,
+				FA98307B2877C26F00F1E6D3 /* PromiseKit.xcframework */,
 				FA92235A27FE7D99001D30D3 /* RxCocoa.xcframework */,
 				FA92235027FE7D1E001D30D3 /* RxSwift.xcframework */,
 				FA92234C27FE7BC1001D30D3 /* RxBluetoothKit.xcframework */,
-				FA112B762645360D008C39F5 /* PromiseKit.framework */,
-				00D2137B8C5F9F5DC91E61D1 /* Pods_BLETool.framework */,
-				8722E8252459251BBDE66464 /* Pods_NaptimeBLE.framework */,
+				84F8B8FB59FC9C475CBB6AA4 /* Pods_BLETool.framework */,
+				3193DF69EAAD7B5B644DB0CC /* Pods_NaptimeBLE.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BDF37AF999B672F982338A68 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				465E8BF9BFF2B656612353A7 /* Pods-BLETool.debug.xcconfig */,
-				3BCED370A1F0DBBF884F4AFC /* Pods-BLETool.release.xcconfig */,
-				69C2959142D9CB6032EA46A2 /* Pods-NaptimeBLE.debug.xcconfig */,
-				86E96FDF78F918CD5B6AC962 /* Pods-NaptimeBLE.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,12 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C16430D1FA03B09002C1438 /* Build configuration list for PBXNativeTarget "BLETool" */;
 			buildPhases = (
-				FA9391335BD778D54DC12494 /* [CP] Check Pods Manifest.lock */,
+				05B8405462658FD8E65AEB5D /* [CP] Check Pods Manifest.lock */,
 				6C1642F71FA03B09002C1438 /* Sources */,
 				6C1642F81FA03B09002C1438 /* Frameworks */,
 				6C1642F91FA03B09002C1438 /* Resources */,
-				1943CB639C810D2821B708C9 /* [CP] Embed Pods Frameworks */,
 				B726F08421F9B672005A4ACF /* Embed Frameworks */,
+				AC1DEFD0AC27AB89686F5B1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,7 +350,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C7113271FA9755B0093099D /* Build configuration list for PBXNativeTarget "NaptimeBLE" */;
 			buildPhases = (
-				0A3559A5EDFF92F088AF3510 /* [CP] Check Pods Manifest.lock */,
+				DF6F355A06647EADF228F457 /* [CP] Check Pods Manifest.lock */,
 				6C7113191FA9755B0093099D /* Headers */,
 				6C7113171FA9755B0093099D /* Sources */,
 				6C7113181FA9755B0093099D /* Frameworks */,
@@ -403,7 +422,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A3559A5EDFF92F088AF3510 /* [CP] Check Pods Manifest.lock */ = {
+		05B8405462658FD8E65AEB5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BLETool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1DEFD0AC27AB89686F5B1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BLETool/Pods-BLETool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FixedDFUService/FixedDFUService.framework",
+				"${BUILT_PRODUCTS_DIR}/NaptimeFileProtocol/NaptimeFileProtocol.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
+				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FixedDFUService.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaptimeFileProtocol.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BLETool/Pods-BLETool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6F355A06647EADF228F457 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -419,64 +488,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-NaptimeBLE-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1943CB639C810D2821B708C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BLETool/Pods-BLETool-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Files/Files.framework",
-				"${BUILT_PRODUCTS_DIR}/FixedDFUService/FixedDFUService.framework",
-				"${BUILT_PRODUCTS_DIR}/NaptimeFileProtocol/NaptimeFileProtocol.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/RxBluetoothKit/RxBluetoothKit.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
-				"${BUILT_PRODUCTS_DIR}/ZIPFoundation/ZIPFoundation.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Files.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FixedDFUService.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NaptimeFileProtocol.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBluetoothKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZIPFoundation.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BLETool/Pods-BLETool-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FA9391335BD778D54DC12494 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BLETool-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -500,6 +511,7 @@
 				6CFB76131FA323AE006C03A5 /* EEGViewController.swift in Sources */,
 				6C1642FF1FA03B09002C1438 /* AppDelegate.swift in Sources */,
 				B7BCFBA120186FE800495A52 /* Persistence.swift in Sources */,
+				FA9830852877C63C00F1E6D3 /* Files.swift in Sources */,
 				6CA2B1791FA1CCAA00A012BC /* PeripheralViewController.swift in Sources */,
 				6CFB76111FA30025006C03A5 /* CommandViewController.swift in Sources */,
 				6C0D22B51FA42352005EAF33 /* DataPool.swift in Sources */,
@@ -671,8 +683,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -681,7 +695,7 @@
 		};
 		6C16430E1FA03B09002C1438 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 465E8BF9BFF2B656612353A7 /* Pods-BLETool.debug.xcconfig */;
+			baseConfigurationReference = AFE38152A271B435B7B2F13F /* Pods-BLETool.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -693,7 +707,10 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = BLETool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
@@ -709,7 +726,7 @@
 		};
 		6C16430F1FA03B09002C1438 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BCED370A1F0DBBF884F4AFC /* Pods-BLETool.release.xcconfig */;
+			baseConfigurationReference = 959E9729628D9E43A63EEB63 /* Pods-BLETool.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -721,7 +738,10 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = BLETool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0.2;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -736,7 +756,7 @@
 		};
 		6C7113251FA9755B0093099D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69C2959142D9CB6032EA46A2 /* Pods-NaptimeBLE.debug.xcconfig */;
+			baseConfigurationReference = BCAFB0D0B75E70AC46F45FA0 /* Pods-NaptimeBLE.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -748,7 +768,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 12;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -756,7 +775,11 @@
 				INFOPLIST_FILE = NaptimeBLE/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.1.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.entertech.NaptimeBLE;
@@ -772,7 +795,7 @@
 		};
 		6C7113261FA9755B0093099D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86E96FDF78F918CD5B6AC962 /* Pods-NaptimeBLE.release.xcconfig */;
+			baseConfigurationReference = 1B1AA7E322DF2FA51D8F9E9C /* Pods-NaptimeBLE.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -784,8 +807,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 12;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -793,7 +814,11 @@
 				INFOPLIST_FILE = NaptimeBLE/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.1.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = cn.entertech.NaptimeBLE;

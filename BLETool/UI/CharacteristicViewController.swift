@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreBluetooth
-import RxBluetoothKit
+import RxBluetoothKit_Airthings
 import RxSwift
 import SVProgressHUD
 import NaptimeBLE
@@ -17,7 +17,7 @@ class CharacteristicViewController: UITableViewController {
 
     var service: BLEService!
 
-    private var _characteristics: [RxBluetoothKit.Characteristic] = []
+    private var _characteristics: [RxBluetoothKit_Airthings.Characteristic] = []
 
     let disposeBag: DisposeBag = DisposeBag()
 
@@ -53,7 +53,7 @@ class CharacteristicViewController: UITableViewController {
         return cell
     }
 
-    var _selectedCharacteristic: RxBluetoothKit.Characteristic?
+    var _selectedCharacteristic: RxBluetoothKit_Airthings.Characteristic?
 
     override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         _selectedCharacteristic = _characteristics[indexPath.row]

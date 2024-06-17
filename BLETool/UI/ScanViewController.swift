@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
 import SVProgressHUD
-import RxBluetoothKit
+import RxBluetoothKit_Airthings
 import RxSwift
 import NaptimeBLE
 

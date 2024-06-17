@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreBluetooth
-import RxBluetoothKit
+import RxBluetoothKit_Airthings
 import RxSwift
 import SVProgressHUD
 import NaptimeBLE
@@ -18,7 +18,7 @@ class PeripheralViewController: UITableViewController {
 
     var peripheral: Peripheral!
     var services: [BLEService] = []
-    var characteristics: [CBUUID: [RxBluetoothKit.Characteristic]] = [:]
+    var characteristics: [CBUUID: [RxBluetoothKit_Airthings.Characteristic]] = [:]
 
     let disposeBag: DisposeBag = DisposeBag()
 

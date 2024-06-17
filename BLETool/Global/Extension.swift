@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import RxBluetoothKit
+import RxBluetoothKit_Airthings
 import NaptimeBLE
 
 extension Data {
@@ -85,7 +85,7 @@ extension BLEService: UUIDType {
 //    }
 //}
 
-extension RxBluetoothKit.Characteristic: Displayable {
+extension RxBluetoothKit_Airthings.Characteristic: Displayable {
     var displayName: String {
         switch self.uuid.uuidString {
         case NaptimeBLE.Characteristic.DeviceInfo.mac.rawValue:

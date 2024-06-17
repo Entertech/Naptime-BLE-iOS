@@ -8,7 +8,7 @@
 
 import Foundation
 import RxSwift
-import RxBluetoothKit
+import RxBluetoothKit_Airthings
 import PromiseKit
 import CoreBluetooth
 
@@ -17,14 +17,14 @@ import CoreBluetooth
 public typealias Bytes = [UInt8]
 
 public protocol Service {
-    init(rxService: RxBluetoothKit.Service)
+    init(rxService: RxBluetoothKit_Airthings.Service)
 }
 
 public class BLEService: Service {
 
-    public let rxService: RxBluetoothKit.Service
+    public let rxService: RxBluetoothKit_Airthings.Service
 
-    public required init(rxService: RxBluetoothKit.Service) {
+    public required init(rxService: RxBluetoothKit_Airthings.Service) {
         self.rxService = rxService
     }
 }

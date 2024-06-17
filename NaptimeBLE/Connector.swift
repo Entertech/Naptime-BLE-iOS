@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreBluetooth
-import RxBluetoothKit
+import RxBluetoothKit_Airthings
 import RxSwift
 import PromiseKit
 
@@ -16,7 +16,7 @@ public protocol DisposeHolder {
     var disposeBag: DisposeBag { get }
 }
 
-extension RxBluetoothKit.Service: Hashable {
+extension RxBluetoothKit_Airthings.Service: Hashable {
     public var hashValue: Int {
         return self.uuid.hash
     }
@@ -53,15 +53,15 @@ public final class Connector: DisposeHolder {
             _disposable = peripheral.establishConnection()
                 .subscribe(onNext: { p in
                     _ = p.discoverServices(nil)
-                        .flatMap { ss -> Single<[RxBluetoothKit.Characteristic]> in
+                        .flatMap { ss -> Single<[RxBluetoothKit_Airthings.Characteristic]> in
                             ss.forEach { s in
                                 print("uuid: \(s.uuid.uuidString)")
                                 guard let `self` = self else { return }
                                 self.assignService(s)
                             }
-                            return Single<[RxBluetoothKit.Characteristic]>.create(subscribe: { event -> Disposable in
+                            return Single<[RxBluetoothKit_Airthings.Characteristic]>.create(subscribe: { event -> Disposable in
                                 var disposes: [Disposable] = []
-                                var allCS: [RxBluetoothKit.Characteristic] = []
+                                var allCS: [RxBluetoothKit_Airthings.Characteristic] = []
                                 ss.enumerated().forEach { (offset, element) in
                                     disposes.append(
                                         element.discoverCharacteristics(nil)
@@ -192,7 +192,7 @@ public final class Connector: DisposeHolder {
         return promise
     }
 
-    private func assignService(_ service: RxBluetoothKit.Service) {
+    private func assignService(_ service: RxBluetoothKit_Airthings.Service) {
         guard let `type` = NaptimeBLE.ServiceType(rawValue: service.uuid.uuidString) else { return }
         switch `type` {
         case .command:

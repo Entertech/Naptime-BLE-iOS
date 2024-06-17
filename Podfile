@@ -9,15 +9,15 @@ target 'BLETool' do
     pod 'FixedDFUService', '~> 4.11.2'
     pod 'SnapKit'
     pod 'SVProgressHUD'
-     pod 'RxSwift', '~> 6.0'
-     pod 'RxCocoa', '~> 6.0'
+    pod 'RxSwift', '6.5.0'
+    pod 'RxCocoa', '6.5.0'
     pod 'SwiftyTimer'
     pod 'Files'
     pod 'NaptimeFileProtocol', :git => "git@github.com:EnterTech/Naptime-FileProtocol-iOS.git", :branch => "develop"
 end
 
 target 'NaptimeBLE' do
-     pod 'PromiseKit'
-     pod 'RxBluetoothKit', :git => 'https://github.com/i-mobility/RxBluetoothKit.git', :tag => '7.0.2'
+     pod 'PromiseKit', '6.18.0'
+     pod 'RxBluetoothKit_Airthings'
 end
 

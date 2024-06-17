@@ -9,7 +9,7 @@
 import UIKit
 import FixedDFUService
 import CoreBluetooth
-import RxBluetoothKit
+import RxBluetoothKit_Airthings
 import SVProgressHUD
 
 class DFUViewController: UIViewController, DFUServiceDelegate, DFUProgressDelegate {

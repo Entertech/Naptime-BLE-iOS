@@ -1,26 +1,26 @@
 PODS:
-  - Files (2.2.1)
+  - Files (4.0.2)
   - FixedDFUService (4.11.2):
     - ZIPFoundation (= 0.9.11)
   - NaptimeFileProtocol (1.0.0)
-  - PromiseKit (6.17.1):
-    - PromiseKit/CorePromise (= 6.17.1)
-    - PromiseKit/Foundation (= 6.17.1)
-    - PromiseKit/UIKit (= 6.17.1)
-  - PromiseKit/CorePromise (6.17.1)
-  - PromiseKit/Foundation (6.17.1):
+  - PromiseKit (6.18.0):
+    - PromiseKit/CorePromise (= 6.18.0)
+    - PromiseKit/Foundation (= 6.18.0)
+    - PromiseKit/UIKit (= 6.18.0)
+  - PromiseKit/CorePromise (6.18.0)
+  - PromiseKit/Foundation (6.18.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.17.1):
+  - PromiseKit/UIKit (6.18.0):
     - PromiseKit/CorePromise
-  - RxBluetoothKit (7.0.0):
-    - RxSwift (~> 6.0)
+  - RxBluetoothKit_Airthings (6.3.2):
+    - RxSwift (~> 6.5.0)
   - RxCocoa (6.5.0):
     - RxRelay (= 6.5.0)
     - RxSwift (= 6.5.0)
   - RxRelay (6.5.0):
     - RxSwift (= 6.5.0)
   - RxSwift (6.5.0)
-  - SnapKit (4.2.0)
+  - SnapKit (5.6.0)
   - SVProgressHUD (2.2.5)
   - SwiftyTimer (2.1.0)
   - ZIPFoundation (0.9.11)
@@ -29,10 +29,10 @@ DEPENDENCIES:
   - Files
   - FixedDFUService (~> 4.11.2)
   - "NaptimeFileProtocol (from `git@github.com:EnterTech/Naptime-FileProtocol-iOS.git`, branch `develop`)"
-  - PromiseKit
-  - RxBluetoothKit (from `https://github.com/i-mobility/RxBluetoothKit.git`, tag `7.0.2`)
-  - RxCocoa (~> 6.0)
-  - RxSwift (~> 6.0)
+  - PromiseKit (= 6.18.0)
+  - RxBluetoothKit_Airthings
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
   - SnapKit
   - SVProgressHUD
   - SwiftyTimer
@@ -42,6 +42,7 @@ SPEC REPOS:
     - Files
     - FixedDFUService
     - PromiseKit
+    - RxBluetoothKit_Airthings
     - RxCocoa
     - RxRelay
     - RxSwift
@@ -54,32 +55,26 @@ EXTERNAL SOURCES:
   NaptimeFileProtocol:
     :branch: develop
     :git: "git@github.com:EnterTech/Naptime-FileProtocol-iOS.git"
-  RxBluetoothKit:
-    :git: https://github.com/i-mobility/RxBluetoothKit.git
-    :tag: 7.0.2
 
 CHECKOUT OPTIONS:
   NaptimeFileProtocol:
     :commit: 41e0c03e5097cee50450e229298a599ff37a80f7
     :git: "git@github.com:EnterTech/Naptime-FileProtocol-iOS.git"
-  RxBluetoothKit:
-    :git: https://github.com/i-mobility/RxBluetoothKit.git
-    :tag: 7.0.2
 
 SPEC CHECKSUMS:
-  Files: 18a88ede4f1e339a73adaca7272af15fa32ba69f
+  Files: d88e31b84d65e754935053b1c584ea8e2320698a
   FixedDFUService: 7e6c2056df8b4d5e585fb9e012849613f91b6e8f
   NaptimeFileProtocol: c0c0fada1f62c4d52f53ed66172ff413468a4e92
-  PromiseKit: ee485df3d4dc570594d7e7aecae6352697dc6a4c
-  RxBluetoothKit: be7acb92b3eaaa3a15c3813c2c12648ad7f49010
+  PromiseKit: 879fa89b55fcb8f11ade9aad0c9721850bb71b9f
+  RxBluetoothKit_Airthings: 2fbc946605b4064d3bf46cefe294fe60f5585ff5
   RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
   RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyTimer: 02dd6cf10cbc71cbf67cec494f6e5eb782102543
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: 5f1bb3f209c3cf7b5c34c0125f2b9651a22503bb
+PODFILE CHECKSUM: 119d406942f229194c3fa323adcadba601aa9163
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.15.2
